@@ -1,0 +1,232 @@
+body {
+   background-color: black;
+   font-family: Helvetica, sans-serif
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    text-transform: uppercase;
+    color: #c867e6;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+h2 , p, h3{
+    color: whitesmoke;
+}
+
+
+/* STYLING HOME */
+
+#background-div {
+    background-image: url("../images/loveislove.png");
+    filter: grayscale(20%);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-div {
+    position: fixed;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -10%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form > button {
+    width: 220px;
+    height: 50px;
+    margin: 20px 0;
+    background-color: #cad658;
+    border: 0px none;
+    border-radius: 500px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+form > button:hover {
+    width: 230px;
+    height: 55px;
+    margin: 18px 0;
+    background-color: #51e482;
+    border: 0px none;
+    border-radius: 500px;
+    padding: 10px 20px;
+    font-size: 14.5px;
+}
+
+form input {
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    width: 500px;
+    height: 50px;
+    border: 0px none;
+    border-radius: 500px;
+    padding: 10px 20px;
+    }
+    
+
+
+/* STYLING ARTIST SEARCH */
+
+
+#albums-search-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 150px;
+  }
+.album-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .album a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: #cdec9b;
+    border: 3px solid transparent;
+    border-radius: 0px; /* Ajusta o valor para definir o grau de arredondamento */
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+    overflow: hidden; /* Para esconder qualquer parte da imagem que ultrapasse os limites do botão */
+  }
+  
+  .album a:hover {
+    background-color: #51e482;
+    color: rgb(58, 54, 54);
+  }
+  
+/* STYLING ALBUMS PAGE */
+
+.albumh {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       color: #c867e6;
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    background-color: #cdec9b;
+    border: 3px solid transparent;
+    border-radius: 0px; /* Ajuste o valor para definir o grau de arredondamento */
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 15px;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+    overflow: hidden; /* Para esconder qualquer parte da imagem que ultrapasse os limites do botão */
+  }
+  
+  .btn a:hover {
+    background-color: #51e482;
+    color: rgb(58, 54, 54);
+  }
+  
+  
+/* STYLING TRACK PAGE */
+
+#tracks-header {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    margin: 0;
+}
+
+#tracks-header p {
+    margin-left: 54px;
+    font-size: 50px;
+    color: white; /* Alterei a cor do texto para branco para melhor legibilidade */
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+#listen-title {
+    margin-right: 364px;
+    font-size: 50px;
+    color: white; /* Alterei a cor do texto para branco para melhor legibilidade */
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    background-color: rgb(49, 48, 48);
+}
+
+.track audio {
+    width: 400px;
+    margin-right: 40px;
+}
+
+.track p {
+    margin-left: 54px;
+    color: white;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.album-card img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.artist-image {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+
+#artist-albums-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 70px 150px;
+  }
+  
+  .album-card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
